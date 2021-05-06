@@ -1,0 +1,34 @@
+Our game is working fine. But when the angry bird attacks the enemy pigs, they remain on the screen.  
+ Let’s understand what happens when a force acts on an object. 
+ 
+You might recall similar situations when the goalkeeper tries to apply force on the moving ball. If forces applied on an object are in the direction of their motion, the object's speed​ increases. 
+ Let's use this change in the pig object's speed as a threshold that decides when to vanish the pig. 
+ 
+Value 2.14 consider ,because when we start the game pig object comes to stationary after 2.14. When the threshold goes beyond 2.14 it means the pig’s speed has been changed as it is hit by an object. 
+ 
+ Just like we added the pig object to the world, we need to remove the pig object from the world when it is hit and crosses a certain speed threshold. 
+ 
+  Are there any properties in matter.js to remove the attached body?  
+  Matter.World.​remove​(world, object) 
+ 
+  what do you see when the bird attacks the pig successfully? 
+ Vanishes from screen
+ 
+ 
+ The ​keyPressed()​ function is called whenever a key is pressed. Each key has the keyCode value which is stored in the keyCode variable. 
+ 
+Each key is identified by a 'keyCode', which is a numerical value we call the ASCII value. 
+ 
+A computer understands which key is pressed by associating this numerical value with the key on the keyboard. 
+ 
+You can look at the value of any key by looking at the ASCII chart from the reference link. 
+ 
+  what is the condition inside the if block if it satisfies? 
+  The bird has to get attached back to the slingshot. 
+  
+  Wow now add as many shots as you want.
+  
+ 
+ 
+ 
+ 
